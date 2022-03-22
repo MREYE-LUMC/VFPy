@@ -7,6 +7,29 @@ This project aims at automated digitalization of Ophthalmic Visual Field Test re
 ## License
 This project is shared under the [GPL-3.0](../master/LICENSE.txt) licence.
 
+## Basic usage
+### Set path to tesseract OCR
+First specify the path of the tesseract executable
+```python
+from vfpy.core.utils.ocrutils import set_path_to_tesseract
+set_path_to_tesseract(r'absolute_path_to_tesseract\tesseract.exe')
+```
+
+### Run OCR
+```python
+from vfpy.devices import hfa
+
+dcmfile = 'path_to_hfa_dicom_file.dcm'
+hfascan = hfa.from_dicom(dcmfile)
+
+hfascan.process()
+
+savedir = 'path_to_savedirectory'
+hfascan.save(savedir)
+
+hfascan.close()
+```
+
 ## Dependencies
 This project depends on the following third-party python packages and software
 
