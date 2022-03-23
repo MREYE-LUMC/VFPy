@@ -65,5 +65,5 @@ While the project should work with most versions of the above described packages
 
 ## Contributors
 1. [Luc van Vught](https://github.com/LucVV)
-2. Jan-Willem Beenakker
+2. [Jan-Willem Beenakker](https://orcid.org/0000-0003-0479-5587)
 
